@@ -1,0 +1,25 @@
+{
+  "name": "github-unsubscriber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/index.js",
+  "bin": {
+    "github-unsubscriber": "./bin/github-unsubscriber"
+  },
+  "scripts": {
+    "build": "tsfmt -r && tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vvakame",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^3.12.0",
+    "node-fetch": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^3.11.2",
+    "@types/node-fetch": "^2.1.2",
+    "typescript": "^3.0.1",
+    "typescript-formatter": "^7.2.2"
+  }
+}

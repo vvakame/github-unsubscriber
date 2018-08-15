@@ -1,0 +1,20 @@
+.git/
+.github/
+
+.envrc
+unsubscribe-config.yml
+
+# for npm
+node_modules/
+
+# codes
+test/
+
+# misc
+.vscode/
+.gitignore
+.editorconfig
+.travis.yml
+.circleci/
+
+npm-debug.log

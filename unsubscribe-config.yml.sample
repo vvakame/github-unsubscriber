@@ -1,0 +1,6 @@
+unwatch:
+  # subscribed repository will be filtered by ... new RegExp(pattern).test(`${repo.owner.name}/${repo.name}`)
+  rules:
+    - foobar-org/
+  ignores:
+    - suddenly-created-repo
