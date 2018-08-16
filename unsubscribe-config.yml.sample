@@ -3,4 +3,4 @@ unwatch:
   rules:
     - foobar-org/
   ignores:
-    - suddenly-created-repo
+    - my-favorite-repo

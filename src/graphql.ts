@@ -25,6 +25,9 @@ export class Client {
             },
             body: JSON.stringify(req),
         });
+        if (resp.status !== 200) {
+            throw new Error(await resp.text());
+        }
         return await resp.json();
     }
 }

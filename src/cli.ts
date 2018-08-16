@@ -51,7 +51,6 @@ commandpost
     .catch(errorHandler);
 
 function errorHandler(err: any): Promise<any> {
-
     if (err instanceof Error) {
         console.error(err.stack);
     } else {

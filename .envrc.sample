@@ -1,1 +1,2 @@
+# required repo:status, public_repo, notifications
 export GITHUB_TOKEN=<your github personal access token place here>
