@@ -39,6 +39,9 @@ export function toConfig(rawConfig: RawConfig): Config {
 
 export async function fetchWatchingList(config: Config) {
     const repoList = await fetchAllWatching(config);
+    if (repoList.some(repo => !repo)) {
+        throw new Error(`null repo found: SSO is disabled? https://github.com/settings/tokens`);
+    }
     const resultList = repoList
         .filter(repo => {
             const target = !!config.unwatch.rules.find(re => re.test(`${repo.owner.login}/${repo.name}`));
